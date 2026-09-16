@@ -36,7 +36,14 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base=/${{ github.event.repository.name }}/
+        shell: bash
+        run: |
+          if [[ "${{ github.event.repository.name }}" == *.github.io ]]; then
+            BASE_PATH="/"
+          else
+            BASE_PATH="/${{ github.event.repository.name }}/"
+          fi
+          npm run build -- --base="$BASE_PATH"
 
       - name: Configure Pages
         uses: actions/configure-pages@v6

@@ -35,7 +35,9 @@ or `docker compose up --build` — the site will be at `http://localhost:8080`.
 Push the `main` branch to GitHub. The workflow in
 `.github/workflows/deploy-pages.yml` builds and deploys the site automatically.
 
-Before the first deployment, select **Settings → Pages → Source → GitHub
-Actions** in the repository. The published URL will be:
+The organization site is published at:
 
-`https://knock-knock-team.github.io/knock-knock-team-site/`
+`https://knock-knock-team.github.io/`
+
+The workflow also supports project Pages automatically if the repository uses
+a different name.

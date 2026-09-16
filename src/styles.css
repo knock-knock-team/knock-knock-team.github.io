@@ -8,9 +8,9 @@
   --brass-2: #8a7048;
   --signal: #7ea08c;
   --rust: #c97b5a;
-  --font: "Pixelify Sans", "Segoe UI", sans-serif;
+  --font: "Oxanium", "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
-  --pixel: "Pixelify Sans", "IBM Plex Mono", monospace;
+  --pixel: "Oxanium", "IBM Plex Mono", sans-serif;
   --pad: clamp(1.25rem, 4vw, 3.5rem);
   --max: 1120px;
 }

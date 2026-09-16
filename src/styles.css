@@ -1,13 +1,13 @@
 :root {
-  --bg: #0a0908;
-  --bg-2: #12100e;
-  --fg: #ece7df;
-  --muted: #8d877c;
-  --line: #2a2723;
-  --brass: #c9a36a;
-  --brass-2: #8a7048;
-  --signal: #7ea08c;
-  --rust: #c97b5a;
+  --bg: #090d0f;
+  --bg-2: #0f1516;
+  --fg: #e9eeec;
+  --muted: #87948f;
+  --line: #22302b;
+  --accent: #8fd3b8;
+  --accent-dim: #527e6d;
+  --signal: #8fd3b8;
+  --cold: #b8e3d2;
   --font: "Oxanium", "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
   --pixel: "Oxanium", "IBM Plex Mono", sans-serif;
@@ -48,7 +48,7 @@ body {
 }
 
 ::selection {
-  background: var(--brass);
+  background: var(--accent);
   color: var(--bg);
 }
 
@@ -58,12 +58,12 @@ a {
 }
 
 a:hover {
-  color: var(--brass);
+  color: var(--accent);
 }
 
 a:focus-visible,
 summary:focus-visible {
-  outline: 1px solid var(--brass);
+  outline: 1px solid var(--accent);
   outline-offset: 3px;
 }
 
@@ -170,7 +170,7 @@ main {
   border: 1px solid var(--line);
   background: #070605;
   min-width: 0;
-  box-shadow: 7px 7px 0 rgba(201, 163, 106, 0.08);
+  box-shadow: 7px 7px 0 rgba(143, 211, 184, 0.09);
 }
 
 .codewin::before {
@@ -180,7 +180,7 @@ main {
   left: -1px;
   width: 22px;
   height: 4px;
-  background: var(--brass);
+  background: var(--accent);
 }
 
 .codewin-chrome {
@@ -210,7 +210,7 @@ main {
 }
 
 .kw {
-  color: var(--brass);
+  color: var(--accent);
 }
 
 .str {
@@ -222,14 +222,14 @@ main {
 }
 
 .num {
-  color: var(--rust);
+  color: var(--cold);
 }
 
 .caret {
   display: inline-block;
   width: 8px;
   height: 1.05em;
-  background: var(--brass);
+  background: var(--accent);
   vertical-align: -0.15em;
   animation: blink 1s steps(1) infinite;
 }
@@ -270,7 +270,7 @@ main {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--brass);
+  color: var(--accent);
 }
 
 .section-lead {
@@ -331,7 +331,7 @@ main {
 .tags li {
   padding: 0.2rem 0.55rem;
   border: 1px solid var(--line);
-  box-shadow: 2px 2px 0 rgba(201, 163, 106, 0.08);
+  box-shadow: 2px 2px 0 rgba(143, 211, 184, 0.09);
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.08em;
@@ -375,7 +375,7 @@ main {
   grid-row: 1;
   justify-self: end;
   font-family: var(--mono);
-  color: var(--brass);
+  color: var(--accent);
 }
 
 .case-list details[open] summary::after {
@@ -431,7 +431,7 @@ main {
   font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--brass-2);
+  color: var(--accent-dim);
 }
 
 .cases-empty {

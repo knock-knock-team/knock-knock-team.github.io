@@ -1,7 +1,6 @@
 import { cases, contacts, services, site } from "./content";
 import { CodeTyper } from "./components/CodeTyper";
-
-const logoUrl = `${import.meta.env.BASE_URL}logo.svg`;
+import logoUrl from "./assets/logo.svg";
 
 const nav = [
   { href: "#services", label: "services" },
